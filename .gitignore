@@ -1,0 +1,22 @@
+@"
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Uploads
+uploads/
+
+# VS Code
+.vscode/
+"@ | Out-File -FilePath .gitignore -Encoding utf8
