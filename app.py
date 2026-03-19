@@ -664,13 +664,7 @@ def internal_error(error):
     return jsonify({"error": "Internal server error"}), 500
 
 
-# ──────────────────────────────────────────────
-# Vercel serverless handler
-# ──────────────────────────────────────────────
-# This is what Vercel looks for
-def handler(request, **kwargs):
-    """Vercel serverless function handler"""
-    return app(request.environ, request.start_response)
+
 
 
 # ──────────────────────────────────────────────
